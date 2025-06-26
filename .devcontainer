@@ -1,0 +1,11 @@
+{
+  "name": "NEXUSIII Node",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": ["golang.Go"],
+  "postCreateCommand": "go build -o nexus . && ./nexus"
+}
